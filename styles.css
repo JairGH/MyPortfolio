@@ -83,7 +83,9 @@ img {
   width: 90vw;
 }
 
-.panel, .panel-active {
+.panel {
+  position: relative;
+  left: 5vw;
   justify-content: space-between;
   background-size: auto 100%;
   background-position: center;
@@ -93,12 +95,15 @@ img {
   color: white;
   cursor: pointer;
   flex: 0.5;
-  margin: 10px;
+  margin: 40px;
   margin-top: 105px;
   position: relative;
   transition: flex 0.7s ease-in;
 }
-.panel h3 {
+.panel:hover {
+  transform: scale(1);
+}
+h3 {
   font-size: 24px;
   position: absolute;
   bottom: 20px;
@@ -106,13 +111,14 @@ img {
   margin: 0;
   opacity: 0;
 }
-.panel.active {
+.panel {
   flex: 5;
 }
 
-.panel.active h3 {
+.panel h3 {
   opacity: 1;
 }
+
 
 @keyframes typing {
   from {
