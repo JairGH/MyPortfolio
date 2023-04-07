@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=\, initial-scale=1.0" /> -->
     <link rel="stylesheet" href="styles.css" />
     <title>Portfolio</title>
   </head>
@@ -13,32 +13,33 @@
         <h1>Logo</h1>
         <ul>
           <li><a href="#about-me">About Me</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact-me">Services</a></li>
         </ul>
         <a href="#" id="contact-nav"><button>Contact</button></a>
       </nav>
     </header>
     <section>
-      <div>
+      <div id="about-me">
         <img
-          id="about-me"
+          id="picture-of-me"
           src="/images/user-photo-removebg-preview.png"
           alt="Picture of me"
         />
         <div class="text-container">
-          <div class="typing-text">
+          
             <p>
               -Hey! My name is Jair Herbert <br />
               I love technology and with it coding is one of my biggest goals.
+              <br />
               Full stack developer enthusiast.
             </p>
           </div>
-        </div>
+        
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="container" id="projects">
         <div
           class="panel"
           style="
@@ -65,8 +66,8 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="contact-form">
+    <article>
+      <div class="contact-form" id="contact-me">
         <form>
           <label for="name">Name:</label>
           <input type="text" required="" />
@@ -77,6 +78,6 @@
           <button type="submit">Submit</button>
         </form>
       </div>
-    </section>
+    </article>
   </body>
 </html>
